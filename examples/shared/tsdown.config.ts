@@ -6,5 +6,4 @@ export default defineConfig({
   globalName: "shared",
   dts: true,
   clean: true,
-  copy: ["src/styles.css"],
 });

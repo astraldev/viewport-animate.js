@@ -9,9 +9,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsdown"
+    "build": "tsdown && pnpm run build:css",
+    "build:css": "tailwindcss -i src/styles.css -o dist/styles.css"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1",
     "tsdown": "catalog:",
     "typescript": "catalog:"
   },
