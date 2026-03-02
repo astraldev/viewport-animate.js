@@ -1,5 +1,5 @@
 packages:
-  - sources
+  - sources/viewport-animate
   - examples/*
 
 onlyBuiltDependencies:
