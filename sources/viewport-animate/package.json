@@ -22,14 +22,17 @@
     "prepublishOnly": "npm run build",
     "test:dev": "vitest",
     "test": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "release": "np --no-yarn",
+    "release:preview": "np --no-yarn --preview"
   },
   "devDependencies": {
     "@arethetypeswrong/core": "^0.18.2",
     "@vitest/coverage-v8": "^4.0.18",
     "publint": "^0.3.18",
     "tsdown": "0.21.0-beta.2",
-    "vitest": "^4.0.18"
+    "vitest": "^4.0.18",
+    "np": "*"
   },
   "publishConfig": {
     "access": "public"
@@ -46,6 +49,6 @@
     "type": "git",
     "url": "git+https://github.com/dystopiandev/viewport-animate.js.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "keywords": []
 }
