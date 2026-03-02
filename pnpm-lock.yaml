@@ -152,7 +152,7 @@ importers:
         specifier: ^0.3.18
         version: 0.3.18
       tsdown:
-        specifier: 0.21.0-beta.2
+        specifier: 'catalog:'
         version: 0.21.0-beta.2(@arethetypeswrong/core@0.18.2)(publint@0.3.18)(typescript@5.9.3)(vue-tsc@3.2.5(typescript@5.9.3))
       vitest:
         specifier: ^4.0.18

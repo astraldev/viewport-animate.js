@@ -2,9 +2,9 @@
   "name": "@examples/shared",
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/umd.js",
-  "module": "./dist/.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "files": [
     "dist"
   ],
@@ -14,5 +14,10 @@
   "devDependencies": {
     "tsdown": "catalog:",
     "typescript": "catalog:"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./styles.css": "./dist/styles.css",
+    "./package.json": "./package.json"
   }
 }
