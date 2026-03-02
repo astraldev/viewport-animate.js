@@ -1,16 +1,22 @@
 import { defineConfig } from "tsdown";
 
-export default defineConfig({
-  dts: true,
-  publint: true,
-  entry: ["src/index.ts"],
-  platform: "neutral",
-  format: ["esm", "umd", "cjs"],
-  globalName: "ViewportAnimate",
-  rolldownOptions: {
-    output: {
-      exports: "default",
-      name: "ViewportAnimate",
-    },
+export default defineConfig([
+  {
+    clean: true,
+    dts: true,
+    publint: true,
+    entry: { index: "src/index.ts" },
+    platform: "neutral",
+    format: ["esm", "cjs"],
   },
-})
+  {
+    entry: { index: "src/umd.ts" },
+    platform: "browser",
+    format: ["umd"],
+    globalName: "ViewportAnimate",
+    // outputOptions: {
+    //   exports: "default",
+    //   name: "ViewportAnimate",
+    // },
+  },
+]);
